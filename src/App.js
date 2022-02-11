@@ -1,12 +1,15 @@
 import React from 'react'
 
-import CreinLogoSvg from './components/CreinLogoSvg'
+import AppBar from './components/AppBar'
+
+import classes from './styles.module.css'
 
 export const App = () => {
   return (
-    <div>
-      Crein App
-      <CreinLogoSvg />
+    <div
+      className={classes.root}
+    >
+      <AppBar/>
     </div>
   )
 }
