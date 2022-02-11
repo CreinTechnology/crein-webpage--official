@@ -9,7 +9,9 @@ export const App = () => {
     <div
       className={classes.root}
     >
-      <AppBar/>
+      <AppBar
+        className={'appBar'}
+      />
     </div>
   )
 }
