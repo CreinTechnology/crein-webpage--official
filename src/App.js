@@ -1,17 +1,15 @@
 import React from 'react'
 
-import AppBar from './components/AppBar'
+import FullPageLayout from './components/FullPageLayout'
 
 import classes from './styles.module.css'
 
 export const App = () => {
   return (
     <div
-      className={classes.root}
+      className={classes.app}
     >
-      <AppBar
-        className={'appBar'}
-      />
+      <FullPageLayout />
     </div>
   )
 }
