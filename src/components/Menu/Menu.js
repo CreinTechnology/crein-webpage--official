@@ -1,30 +1,28 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import Menu from '../Menu/Menu'
-
 import classes from './styles.module.css'
 
-export const AppBar = (props) => {
+export const Menu = (props) => {
   const {
     className,
+    children,
     ...otherProps
   } = props
 
   return (
-    <div
+    <ul
       className={`${classes.root}${className ? ` ${className}` : ''}`}
       {...otherProps}
     >
-      <Menu
-        className={'Menu'}
-      />
-    </div>
+      {children}
+    </ul>
   )
 }
 
-AppBar.propTypes = {
-  className: PropTypes.string
+Menu.propTypes = {
+  className: PropTypes.string,
+  children: PropTypes.node
 }
 
-export default AppBar
+export default Menu
