@@ -6,6 +6,7 @@ import classes from './styles.module.css'
 export const FullPageLayout = (props) => {
   const {
     className,
+    children,
     ...otherProps
   } = props
 
@@ -15,12 +16,14 @@ export const FullPageLayout = (props) => {
       {...otherProps}
     >
 
+      {children}
     </div>
   )
 }
 
 FullPageLayout.propTypes = {
-  className: PropTypes.string
+  className: PropTypes.string,
+  children: PropTypes.node
 }
 
 export default FullPageLayout

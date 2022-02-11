@@ -1,6 +1,7 @@
 import React from 'react'
 
-import FullPageLayout from './components/FullPageLayout'
+import Container from './components/Container'
+import CreinLogoSvg from './components/CreinLogoSvg'
 
 import classes from './styles.module.css'
 
@@ -9,7 +10,11 @@ export const App = () => {
     <div
       className={classes.app}
     >
-      <FullPageLayout />
+      <Container>
+        <CreinLogoSvg
+          className={'logo'}
+        />
+      </Container>
     </div>
   )
 }
