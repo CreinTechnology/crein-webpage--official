@@ -7,7 +7,7 @@ import MenuBarsIcon from '../MenuBarsIcon'
 
 import classes from './styles.module.css'
 
-export const Menu = (props) => {
+export const Navbar = (props) => {
   const {
     className,
     children,
@@ -20,27 +20,32 @@ export const Menu = (props) => {
       {...otherProps}
     >
       <Container
-        className={classes.logoWrapper}
+        className={classes.menuWrapper}
       >
-        <CreinLogoSvg
-          className={classes.logo}
-        />
-      </Container>
+        <Container
+          className={classes.logoWrapper}
+        >
+          <CreinLogoSvg
+            className={classes.logo}
+          />
+        </Container>
 
-      <Container
-        className={classes.menuIconWrapper}
-      >
-        <MenuBarsIcon
-          className={classes.menuIcon}
-        />
+        <Container
+          className={classes.menuIconWrapper}
+        >
+          <MenuBarsIcon
+            className={classes.menuIcon}
+          />
+        </Container>
+
       </Container>
     </div>
   )
 }
 
-Menu.propTypes = {
+Navbar.propTypes = {
   className: PropTypes.string,
   children: PropTypes.node
 }
 
-export default Menu
+export default Navbar

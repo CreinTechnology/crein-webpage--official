@@ -1,0 +1,29 @@
+.root {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menuWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: content-box;
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  padding: 0 35px;
+}
+
+.logoWrapper {
+  flex-basis: 50%;
+}
+
+.menuIconWrapper {
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 70px;
+  flex-basis: 50%;
+}

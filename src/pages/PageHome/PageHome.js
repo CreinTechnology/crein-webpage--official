@@ -1,11 +1,12 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import Menu from '../../components/Menu'
+import Navbar from '../../components/Navbar'
+import ContentWrapper from '../../components/ContentWrapper'
 
 import classes from './styles.module.css'
 
-export const PagesHome = (props) => {
+export const PageHome = (props) => {
   const {
     className,
     ...otherProps
@@ -16,16 +17,21 @@ export const PagesHome = (props) => {
       className={`${classes.root}${className ? ` ${className}` : ''}`}
       {...otherProps}
     >
-      <Menu
-        className={classes.menuWrapper}
+
+      <Navbar
+        className={classes.navbar}
+      />
+
+      <ContentWrapper
+        className={classes.contentWrapper}
       />
 
     </div>
   )
 }
 
-PagesHome.propTypes = {
+PageHome.propTypes = {
   className: PropTypes.string
 }
 
-export default PagesHome
+export default PageHome
