@@ -1,12 +1,13 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
+import PageHome from '../../pages/PageHome'
+
 import classes from './styles.module.css'
 
 export const FullPageLayout = (props) => {
   const {
     className,
-    children,
     ...otherProps
   } = props
 
@@ -15,15 +16,13 @@ export const FullPageLayout = (props) => {
       className={`${classes.root}${className ? ` ${className}` : ''}`}
       {...otherProps}
     >
-
-      {children}
+      <PageHome />
     </div>
   )
 }
 
 FullPageLayout.propTypes = {
-  className: PropTypes.string,
-  children: PropTypes.node
+  className: PropTypes.string
 }
 
 export default FullPageLayout

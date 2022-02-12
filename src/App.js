@@ -1,6 +1,6 @@
 import React from 'react'
 
-import PageHome from './pages/PageHome'
+import FullPageLayout from './components/FullPageLayout'
 import Navbar from './components//Navbar'
 
 import classes from './styles.module.css'
@@ -11,7 +11,7 @@ export const App = () => {
       className={classes.app}
     >
       <Navbar />
-      <PageHome />
+      <FullPageLayout />
     </div>
   )
 }
