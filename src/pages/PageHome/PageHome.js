@@ -1,7 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import Navbar from '../../components/Navbar'
 import ContentWrapper from '../../components/ContentWrapper'
 
 import classes from './styles.module.css'
@@ -17,10 +16,6 @@ export const PageHome = (props) => {
       className={`${classes.root}${className ? ` ${className}` : ''}`}
       {...otherProps}
     >
-
-      <Navbar
-        className={classes.navbar}
-      />
 
       <ContentWrapper
         className={classes.contentWrapper}
