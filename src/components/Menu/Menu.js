@@ -1,6 +1,10 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
+import Container from '../Container'
+import CreinLogoSvg from '../CreinLogoSvg'
+import MenuBarsIcon from '../MenuBarsIcon'
+
 import classes from './styles.module.css'
 
 export const Menu = (props) => {
@@ -11,12 +15,26 @@ export const Menu = (props) => {
   } = props
 
   return (
-    <ul
+    <div
       className={`${classes.root}${className ? ` ${className}` : ''}`}
       {...otherProps}
     >
-      {children}
-    </ul>
+      <Container
+        className={classes.logoWrapper}
+      >
+        <CreinLogoSvg
+          className={classes.logo}
+        />
+      </Container>
+
+      <Container
+        className={classes.menuIconWrapper}
+      >
+        <MenuBarsIcon
+          className={classes.menuIcon}
+        />
+      </Container>
+    </div>
   )
 }
 

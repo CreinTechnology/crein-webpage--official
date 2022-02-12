@@ -1,10 +1,9 @@
 import React from 'react'
 
-import CreinLogoSvg from './components/CreinLogoSvg'
 import Container from './components/Container'
 import Typography from './components/Typography'
+import PagesHome from './pages/PagesHome'
 
-import MenuBarsIcon from './components/MenuBarsIcon'
 import HelloIcon from './icons/HelloIcon'
 
 import classes from './styles.module.css'
@@ -14,37 +13,56 @@ export const App = () => {
     <div
       className={classes.app}
     >
+      <PagesHome />
       <Container
-        className={'menuWrapper'}
+        className={classes.contentWrapper}
       >
         <Container
-          className={'logoWrapper'}
+          className={classes.iconWrapper}
         >
-          <CreinLogoSvg
-            className={'logo'}
+          <HelloIcon
+            className={classes.helloIcon}
           />
         </Container>
 
         <Container
-          className={'menuIconWrapper'}
+          className={classes.introduceWrapper}
         >
-          <MenuBarsIcon />
-        </Container>
-      </Container>
+          <Container
+            className={classes.textWrapper}
+          >
+            <Typography
+              className={classes.helloText}
+              variant={'h1'}
+            >
+              Hej!
+            </Typography>
+          </Container>
 
-      <Container
-        className={'mainContent'}
-      >
-        <Container
-          className={'imageWrapper'}
-        >
-          <HelloIcon />
-        </Container>
+          <Container
+            className={classes.nameWrapper}
+          >
+            <Typography
+              className={classes.nameText}
+              variant={'h2'}
+            >
+              Mam na imię Paweł.
+            </Typography>
+          </Container>
 
-        <Container
-          className={'textWrapper'}
-        >
-          <Typography></Typography>
+          <Container
+            className={classes.descriptionWrapper}
+          >
+            <Typography
+              className={classes.descriptionText}
+              variant={'h2'}
+            >
+              W Crein Technology
+              produkujemy strony
+              i aplikacje internetowe.
+            </Typography>
+          </Container>
+
         </Container>
 
       </Container>
