@@ -14,7 +14,7 @@ export const PageHome = (props) => {
   } = props
 
   return (
-    <div
+    <section
       className={`${classes.root}${className ? ` ${className}` : ''}`}
       {...otherProps}
     >
@@ -56,7 +56,7 @@ export const PageHome = (props) => {
         </Container>
 
       </Container>
-    </div>
+    </section>
   )
 }
 

@@ -3,24 +3,24 @@ import PropTypes from 'prop-types'
 
 import classes from './styles.module.css'
 
-export const MainSection = (props) => {
+export const PageOffer = (props) => {
   const {
     className,
     ...otherProps
   } = props
 
   return (
-    <main
+    <section
       className={`${classes.root}${className ? ` ${className}` : ''}`}
       {...otherProps}
     >
 
-    </main>
+    </section>
   )
 }
 
-MainSection.propTypes = {
+PageOffer.propTypes = {
   className: PropTypes.string
 }
 
-export default MainSection
+export default PageOffer
