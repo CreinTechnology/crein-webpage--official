@@ -12,7 +12,7 @@ export const App = () => {
       className={classes.app}
     >
       <Container
-        className={classes.head}
+        className={classes.header}
       >
         <Navbar />
       </Container>
