@@ -1,5 +1,6 @@
 import React from 'react'
 
+import Container from './components/Container'
 import FullPageLayout from './components/FullPageLayout'
 import Navbar from './components//Navbar'
 
@@ -10,8 +11,23 @@ export const App = () => {
     <div
       className={classes.app}
     >
-      <Navbar />
-      <FullPageLayout />
+      <Container
+        className={classes.head}
+      >
+        <Navbar />
+      </Container>
+
+      <Container
+        className={classes.main}
+      >
+        <FullPageLayout />
+      </Container>
+
+      <Container
+        className={classes.footer}
+      >
+
+      </Container>
     </div>
   )
 }
