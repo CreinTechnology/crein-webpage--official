@@ -2,7 +2,6 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 import Container from '../../components/Container'
-import Typography from '../../components/Typography'
 
 import HelloIcon from '../../icons/HelloIcon'
 
@@ -21,10 +20,10 @@ export const PageHome = (props) => {
     >
 
       <Container
-        className={classes.contentWrapper}
+        className={classes.homeContentWrapper}
       >
         <Container
-          className={classes.iconWrapper}
+          className={classes.iconContainer}
         >
           <HelloIcon
             className={classes.helloIcon}
@@ -32,42 +31,27 @@ export const PageHome = (props) => {
         </Container>
 
         <Container
-          className={classes.introduceWrapper}
+          className={classes.textWrapper}
         >
-          <Container
-            className={classes.textWrapper}
-          >
-            <Typography
-              className={classes.helloText}
-              variant={'h1'}
-            >
-              Hej!
-            </Typography>
-          </Container>
 
-          <Container
-            className={classes.nameWrapper}
+          <h1
+            className={classes.h1Element}
           >
-            <Typography
-              className={classes.nameText}
-              variant={'h2'}
-            >
-              Mam na imię Paweł.
-            </Typography>
-          </Container>
+            Hej!
+          </h1>
 
-          <Container
-            className={classes.descriptionWrapper}
+          <h2
+            className={classes.nameText}
           >
-            <Typography
-              className={classes.descriptionText}
-              variant={'h2'}
-            >
-              W Crein Technology
-              produkujemy strony
-              i aplikacje internetowe.
-            </Typography>
-          </Container>
+            Mam na imię Paweł.
+          </h2>
+
+          <h2
+            className={classes.descriptionText}
+          >
+            W Crein Technology produkujemy aplikacje <br />
+            i strony internetowe.
+          </h2>
 
         </Container>
 

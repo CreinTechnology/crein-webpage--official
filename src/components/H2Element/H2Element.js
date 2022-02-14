@@ -3,24 +3,24 @@ import PropTypes from 'prop-types'
 
 import classes from './styles.module.css'
 
-export const ContentWrapper = (props) => {
+export const H2Element = (props) => {
   const {
     className,
     ...otherProps
   } = props
 
   return (
-    <div
-      className={`${classes.root}${className ? ` ${className}` : ''}`}
+    <h2
+      className={`${classes.h2}${className ? ` ${className}` : ''}`}
       {...otherProps}
     >
 
-    </div>
+    </h2>
   )
 }
 
-ContentWrapper.propTypes = {
+H2Element.propTypes = {
   className: PropTypes.string
 }
 
-export default ContentWrapper
+export default H2Element

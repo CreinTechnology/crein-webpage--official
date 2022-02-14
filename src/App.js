@@ -1,8 +1,11 @@
 import React from 'react'
 
-import Container from './components/Container'
-import FullPageLayout from './components/FullPageLayout'
+import Header from './components//Header'
+import MainSection from './components//MainSection'
+import Footer from './components//Footer'
 import Navbar from './components//Navbar'
+
+import PageHome from './pages/PageHome'
 
 import classes from './styles.module.css'
 
@@ -11,23 +14,23 @@ export const App = () => {
     <div
       className={classes.app}
     >
-      <Container
+      <Header
         className={classes.header}
       >
         <Navbar />
-      </Container>
+      </Header>
 
-      <Container
+      <MainSection
         className={classes.main}
       >
-        <FullPageLayout />
-      </Container>
+        <PageHome />
+      </MainSection>
 
-      <Container
+      <Footer
         className={classes.footer}
       >
 
-      </Container>
+      </Footer>
     </div>
   )
 }

@@ -15,7 +15,7 @@ export const Navbar = (props) => {
   } = props
 
   return (
-    <div
+    <nav
       className={`${classes.root}${className ? ` ${className}` : ''}`}
       {...otherProps}
     >
@@ -39,7 +39,7 @@ export const Navbar = (props) => {
         </Container>
 
       </Container>
-    </div>
+    </nav>
   )
 }
 

@@ -3,26 +3,24 @@ import PropTypes from 'prop-types'
 
 import classes from './styles.module.css'
 
-export const FullPageLayout = (props) => {
+export const MainSection = (props) => {
   const {
     className,
-    children,
     ...otherProps
   } = props
 
   return (
-    <div
+    <section
       className={`${classes.root}${className ? ` ${className}` : ''}`}
       {...otherProps}
     >
-      {children}
-    </div>
+
+    </section>
   )
 }
 
-FullPageLayout.propTypes = {
-  className: PropTypes.string,
-  children: PropTypes.node
+MainSection.propTypes = {
+  className: PropTypes.string
 }
 
-export default FullPageLayout
+export default MainSection

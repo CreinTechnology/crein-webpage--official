@@ -14,19 +14,19 @@ export const Typography = (props) => {
   const variantClass = classes[variant]
 
   return (
-    <span
+    <p
       className={`${classes.root}${className ? ` ${className}` : ''}${variantClass ? ` ${variantClass}` : ''}`}
       {...otherProps}
     >
       {children}
-    </span>
+    </p>
   )
 }
 
 Typography.propTypes = {
   className: PropTypes.string,
   children: PropTypes.node,
-  variant: PropTypes.oneOf(['h1', 'h2', 'body1', 'body2', 'body3', 'body4'])
+  variant: PropTypes.oneOf(['body1', 'body2', 'body3', 'body4'])
 }
 
 export default Typography

@@ -1,4 +1,36 @@
 .root {
-  margin-top: 70px;
-  padding: 0 35px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+.homeContentWrapper {
+  margin-top: 25%;
+  padding: 0 15px;
+}
+
+.iconContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.introTextWrapper {
+  margin-top: 25px;
+}
+
+.h1Element {
+  font-family: Lato;
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+
+.nameText {
+  font-size: 24px;
+}
+
+.descriptionText {
+  font-size: 22px;
+  line-height: 26px;
 }
