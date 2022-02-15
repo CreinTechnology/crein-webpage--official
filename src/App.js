@@ -7,6 +7,7 @@ import Navbar from './components//Navbar'
 
 import PageHome from './pages/PageHome'
 import PageAbout from './pages/PageAbout'
+import PageOffer from './pages/PageOffer'
 
 import classes from './styles.module.css'
 
@@ -26,7 +27,7 @@ export const App = () => {
       >
         <PageHome />
         <PageAbout />
-        {/* <PageOffer /> */}
+        <PageOffer />
 
       </MainSection>
 

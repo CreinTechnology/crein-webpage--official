@@ -6,8 +6,10 @@
   padding-right: 30px;
 }
 
-.offerContentWrapper {
+.aboutContentWrapper {
   padding-top: 50px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .imageWrapper {
@@ -36,4 +38,8 @@
 .techstackIcon {
   height: 2rem;
   width: 2rem;
+}
+
+.description{
+  line-height: 26px;
 }

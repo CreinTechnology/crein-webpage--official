@@ -19,7 +19,7 @@ export const PageAbout = (props) => {
       {...otherProps}
     >
       <Container
-        className={classes.offerContentWrapper}
+        className={classes.aboutContentWrapper}
       >
 
         <Container
@@ -44,19 +44,19 @@ export const PageAbout = (props) => {
           </h2>
 
           <p
-            className={classes.descriptionText}
+            className={classes.description}
           >
             Zawodowo jestem programistą, prywatnie - pasjonatem Formuły 1.
           </p>
 
           <p
-            className={classes.descriptionText}
+            className={classes.description}
           >
             Prowadzę firmę Crein Technology, w której odpowiadam za wytwarzanie aplikacji.
           </p>
 
           <p
-            className={classes.descriptionText}
+            className={classes.description}
           >
             W procesie producji wykorzystuję język JavaScript, który
             w ostatnich latach bardzo się rozwinął, jego najpopularniejszą bibliotekę,
@@ -139,12 +139,12 @@ export const PageAbout = (props) => {
           </div>
 
           <p
-            className={classes.descriptionText}
+            className={classes.description}
           >
             Lubię programować!
           </p>
           <p
-            className={classes.descriptionText}
+            className={classes.description}
           >
             Daje mi to wiele satysfakcji i ogrom frajdy.
           </p>

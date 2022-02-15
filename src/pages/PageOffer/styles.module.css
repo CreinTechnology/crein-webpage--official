@@ -1,0 +1,36 @@
+.root {
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 100px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.contentWrapper {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.headerText {
+  font-size: 34px;
+  font-weight: bold;
+}
+
+.wrapper {
+  margin-top: 50px;
+}
+
+.imageWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image{
+  width: 150px;
+  height: 150px;
+}
+
+.description{
+  line-height: 26px;
+}
