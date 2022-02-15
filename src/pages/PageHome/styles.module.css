@@ -1,14 +1,14 @@
 .root {
   max-width: 1200px;
   margin: 0 auto;
-  margin-top: 100px;
+  margin-top: 70px;
   padding-left: 30px;
   padding-right: 30px;
-  height: calc(100vh - 100px);
+  /* height: calc(100vh - 100px); */
 }
 
 .contentWrapper {
-  padding-top: 20vh;
+  padding-top: 18vh;
 }
 
 .layersWrapper {
@@ -26,7 +26,8 @@
 }
 
 .svgWrapper {
-  margin-top: 95px;
+  margin-top: 110px;
+  margin-bottom: 40px;
 }
 
 .text {

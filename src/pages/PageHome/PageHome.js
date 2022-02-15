@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 import Container from '../../components/Container'
+import Button from '../../components/Button'
 
 import classes from './styles.module.css'
 
@@ -227,6 +228,10 @@ export const PageHome = (props) => {
 
       </Container>
 
+      <Button
+        label={'ILE TO KOSZTUJE?'}
+        variant={'active'}
+      />
     </section>
   )
 }

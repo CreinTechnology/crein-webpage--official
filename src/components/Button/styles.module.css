@@ -1,0 +1,63 @@
+.root {
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  background-color: #FFFFFF;
+  width: 200px;
+  height: 50px;
+  font-size: 16px;
+  font-family: 'Lato';
+  font-weight: 600;
+}
+
+.active {
+  background-color: #00FF29;
+}
+
+.xs {
+  width: 40px;
+  height: 40px;
+}
+
+.s {
+  width: 80px;
+  height: 40px;
+}
+
+.l {
+  width: 250px;
+  height: 100px;
+}
+
+.xl {
+  width: 300px;
+  height: 100px;
+}
+
+@media(min-width: 1024px) {
+  .root {
+    width: 350px;
+    height: 50px;
+  }
+
+  .xs {
+    width: 50px;
+    height: 50px;
+  }
+
+  .s {
+    width: 80px;
+    height: 40px;
+  }
+
+
+  .l {
+    width: 250px;
+    height: 100px;
+  }
+
+  .xl {
+    width: 350px;
+    height: 150px;
+  }
+}
