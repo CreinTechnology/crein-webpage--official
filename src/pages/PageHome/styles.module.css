@@ -1,36 +1,49 @@
 .root {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 30px;
+  margin-top: 100px;
+  padding-left: 30px;
+  padding-right: 30px;
+  height: calc(100vh - 100px);
 }
 
-.homeContentWrapper {
-  margin-top: 25%;
-  padding: 0 15px;
+.contentWrapper {
+  padding-top: 20vh;
 }
 
-.iconContainer {
+.layersWrapper {
+  margin-right: 10px;
+}
+
+.wrapper {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
 }
 
-.introTextWrapper {
-  margin-top: 25px;
+.layers {
+  transform: scale(0.95);
 }
 
-.h1Element {
-  font-family: Lato;
-  font-size: 40px;
-  font-weight: 700;
-  margin-bottom: 0;
+.svgWrapper {
+  margin-top: 95px;
 }
 
-.nameText {
-  font-size: 24px;
+.text {
+  margin: 10px 0 0;
+  color: #00E322;
 }
 
-.descriptionText {
-  font-size: 22px;
-  line-height: 26px;
+.textSize {
+  font-size: 18px;
+  font-weight: 900;
+}
+
+.textSmall {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.svgFirstName{
+  margin-bottom: 5px;
 }

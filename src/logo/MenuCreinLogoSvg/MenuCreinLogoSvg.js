@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 
 import classes from './styles.module.css'
 
-export const CreinLogoSvg = (props) => {
+export const MenuCreinLogoSvg = (props) => {
   const {
     className,
     ...otherProps
@@ -30,8 +30,8 @@ export const CreinLogoSvg = (props) => {
   )
 }
 
-CreinLogoSvg.propTypes = {
+MenuCreinLogoSvg.propTypes = {
   className: PropTypes.string
 }
 
-export default CreinLogoSvg
+export default MenuCreinLogoSvg
