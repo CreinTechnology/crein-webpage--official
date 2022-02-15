@@ -6,7 +6,7 @@ import Footer from './components//Footer'
 import Navbar from './components//Navbar'
 
 import PageHome from './pages/PageHome'
-import PageOffer from './pages/PageOffer'
+import PageAbout from './pages/PageAbout'
 
 import classes from './styles.module.css'
 
@@ -25,7 +25,8 @@ export const App = () => {
         className={classes.main}
       >
         <PageHome />
-        <PageOffer />
+        <PageAbout />
+        {/* <PageOffer /> */}
 
       </MainSection>
 

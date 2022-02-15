@@ -8,11 +8,18 @@
 }
 
 .contentWrapper {
-  padding-top: 18vh;
+  padding-top: 100px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.overlayer {
+  transform: translate(23px, 25px);
 }
 
 .layersWrapper {
-  margin-right: 10px;
+  margin-right: 25px;
+  z-index: -1;
 }
 
 .wrapper {
@@ -22,11 +29,11 @@
 }
 
 .layers {
-  transform: scale(0.95);
+  transform: scale(0.85);
 }
 
 .svgWrapper {
-  margin-top: 110px;
+  margin-top: 90px;
   margin-bottom: 40px;
 }
 
@@ -45,6 +52,6 @@
   font-weight: 600;
 }
 
-.svgFirstName{
+.svgFirstName {
   margin-bottom: 5px;
 }
