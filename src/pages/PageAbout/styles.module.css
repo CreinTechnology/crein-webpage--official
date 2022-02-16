@@ -1,9 +1,10 @@
-.root {
+.about {
   max-width: 1200px;
   margin: 0 auto;
   margin-top: 100px;
   padding-left: 30px;
   padding-right: 30px;
+  padding-bottom: 30px;
 }
 
 .aboutContentWrapper {

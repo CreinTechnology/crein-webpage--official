@@ -15,7 +15,7 @@ export const PageAbout = (props) => {
 
   return (
     <section
-      className={`${classes.root}${className ? ` ${className}` : ''}`}
+      className={`${classes.about}${className ? ` ${className}` : ''}`}
       {...otherProps}
     >
       <Container

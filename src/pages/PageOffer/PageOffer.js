@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 
 import Row from '../../components/Row'
 import Container from '../../components/Container'
+import Button from '../../components/Button'
 
 import laptopUser from '../../images/laptopUser.png'
 import chilloutIcon from '../../images/chilloutIcon.png'
@@ -20,7 +21,7 @@ export const PageOffer = (props) => {
 
   return (
     <section
-      className={`${classes.root}${className ? ` ${className}` : ''}`}
+      className={`${classes.offer}${className ? ` ${className}` : ''}`}
       {...otherProps}
     >
       <div
@@ -153,6 +154,18 @@ export const PageOffer = (props) => {
           Ci w określeniu budżetu projektu.
         </p>
 
+        <Button
+          className={classes.button}
+          colorVariant={'neon'}
+          sizeVariant={'l'}
+          label={'STRONA WWW'}
+        />
+
+        <Button
+          className={classes.button}
+          sizeVariant={'l'}
+          label={'APLIKACJA'}
+        />
       </Container>
     </section>
   )

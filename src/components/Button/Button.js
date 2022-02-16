@@ -7,15 +7,17 @@ export const Button = (props) => {
   const {
     className,
     label,
-    variant,
+    sizeVariant,
+    colorVariant,
     ...otherProps
   } = props
 
-  const variantClass = classes[variant]
+  const variantClass = classes[sizeVariant]
+  const background = classes[colorVariant]
 
   return (
     <button
-      className={`${classes.root}${className ? ` ${className}` : ''}${variantClass ? ` ${variantClass}` : ''}`}
+      className={`${classes.root}${className ? ` ${className}` : ''}${variantClass ? ` ${variantClass}` : ''}${background ? ` ${background}` : ''}`}
       {...otherProps}
     >
       {label}
@@ -25,8 +27,9 @@ export const Button = (props) => {
 
 Button.propTypes = {
   className: PropTypes.string,
+  colorVariant: PropTypes.string,
   label: PropTypes.string,
-  variant: PropTypes.oneOf(['active', 'xl', 'l', 's', 'xs'])
+  sizeVariant: PropTypes.oneOf(['xs', 's', 'l', 'xl'])
 }
 
 export default Button

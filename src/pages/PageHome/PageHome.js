@@ -14,7 +14,7 @@ export const PageHome = (props) => {
 
   return (
     <section
-      className={`${classes.root}${className ? ` ${className}` : ''}`}
+      className={`${classes.home}${className ? ` ${className}` : ''}`}
       {...otherProps}
     >
       <Container
@@ -295,7 +295,7 @@ export const PageHome = (props) => {
 
         <Button
           label={'ILE TO KOSZTUJE?'}
-          variant={'active'}
+          colorVariant={'neon'}
         />
       </Container>
 

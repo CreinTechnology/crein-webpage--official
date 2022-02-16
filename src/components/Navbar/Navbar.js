@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 import Container from '../Container'
-import CreinLogoSvg from '../CreinLogoSvg'
+import MenuCreinLogoSvg from '../../logo/MenuCreinLogoSvg'
 import MenuBarsIcon from '../MenuBarsIcon'
 
 import classes from './styles.module.css'
@@ -25,7 +25,7 @@ export const Navbar = (props) => {
         <Container
           className={classes.logoWrapper}
         >
-          <CreinLogoSvg
+          <MenuCreinLogoSvg
             className={classes.logo}
           />
         </Container>
