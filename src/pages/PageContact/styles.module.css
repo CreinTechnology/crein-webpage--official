@@ -1,0 +1,46 @@
+.contact {
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 100px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 30px;
+}
+
+.contentWrapper {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.mainHeader {
+  font-size: 34px;
+  font-weight: bold;
+}
+
+.textHeader {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.bold {
+  font-weight: 900;
+}
+
+.semiBold{
+  font-weight: 700;
+}
+
+.colorGreen {
+  color: #00ba1a
+}
+
+.imageWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.avatar {
+  width: 150px;
+  height: 150px;
+}

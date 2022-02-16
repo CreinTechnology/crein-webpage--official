@@ -3,26 +3,28 @@ import PropTypes from 'prop-types'
 
 import classes from './styles.module.css'
 
-export const HeaderH2 = (props) => {
+export const Avatar = (props) => {
   const {
     className,
-    content,
+    avatarUrl,
+    avatarText,
     ...otherProps
   } = props
 
   return (
-    <h2
+    <img
       className={`${classes.root}${className ? ` ${className}` : ''}`}
+      src={avatarUrl}
+      alt={avatarText}
       {...otherProps}
-    >
-      {content}
-    </h2>
+    />
   )
 }
 
-HeaderH2.propTypes = {
+Avatar.propTypes = {
   className: PropTypes.string,
-  content: PropTypes.string
+  avatarUrl: PropTypes.string.isRequired,
+  avatarText: PropTypes.string
 }
 
-export default HeaderH2
+export default Avatar

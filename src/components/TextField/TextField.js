@@ -3,26 +3,22 @@ import PropTypes from 'prop-types'
 
 import classes from './styles.module.css'
 
-export const HeaderH2 = (props) => {
+export const TextField = (props) => {
   const {
     className,
-    content,
     ...otherProps
   } = props
 
   return (
-    <h2
+    <input
       className={`${classes.root}${className ? ` ${className}` : ''}`}
       {...otherProps}
-    >
-      {content}
-    </h2>
+    />
   )
 }
 
-HeaderH2.propTypes = {
-  className: PropTypes.string,
-  content: PropTypes.string
+TextField.propTypes = {
+  className: PropTypes.string
 }
 
-export default HeaderH2
+export default TextField
