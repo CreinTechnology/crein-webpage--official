@@ -1,0 +1,30 @@
+.root {}
+
+.headerClass {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  padding: 22px 0;
+}
+
+.menuContainer {
+  height: 70vh;
+  border: 1px solid #00FF29;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menuList {
+  padding: 0;
+  list-style-type: none;
+  margin: 0;
+}
+
+.listItemClass {
+  margin-bottom: 28px;
+  font-size: 1.2em;
+  font-weight: 700;
+}

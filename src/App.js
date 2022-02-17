@@ -4,6 +4,8 @@ import Header from './components//Header'
 import MainSection from './components//MainSection'
 import Footer from './components//Footer'
 import Navbar from './components//Navbar'
+import FullPageLayout from './components/FullPageLayout'
+import MobileMenu from './components/MobileMenu'
 
 import PageHome from './pages/PageHome'
 import PageAbout from './pages/PageAbout'
@@ -38,6 +40,17 @@ export const App = () => {
       >
 
       </Footer>
+
+      <FullPageLayout
+        className={'fullPageLayout'}
+      >
+        <MobileMenu
+          headerClass={'header'}
+          menuContainer={'menuContainer'}
+          menuList={'menuList'}
+          listItemClass={'listItemClass'}
+        />
+      </FullPageLayout>
     </div>
   )
 }
