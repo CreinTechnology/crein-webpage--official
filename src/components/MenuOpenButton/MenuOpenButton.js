@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 
 import classes from './styles.module.css'
 
-export const MenuBarsIcon = (props) => {
+export const MenuOpenButton = (props) => {
   const {
     className,
     onClick,
@@ -29,9 +29,9 @@ export const MenuBarsIcon = (props) => {
   )
 }
 
-MenuBarsIcon.propTypes = {
+MenuOpenButton.propTypes = {
   className: PropTypes.string,
   onClick: PropTypes.func
 }
 
-export default MenuBarsIcon
+export default MenuOpenButton

@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 
 import Container from '../Container'
 import MenuCreinLogoSvg from '../../logo/MenuCreinLogoSvg'
-import MenuBarsIcon from '../MenuBarsIcon'
+import MenuOpenButton from '../MenuOpenButton'
 
 import classes from './styles.module.css'
 
@@ -33,7 +33,7 @@ export const Navbar = (props) => {
         <Container
           className={classes.menuIconWrapper}
         >
-          <MenuBarsIcon
+          <MenuOpenButton
             className={classes.menuButton}
             onClick={onClick}
           />
