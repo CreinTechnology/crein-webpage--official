@@ -1,1 +1,44 @@
-.root {}
+.root {
+  border-top: 0.5px solid #00FF29;
+  margin-top: 100px;
+}
+
+.contentWrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 30px;
+}
+
+.wrapper {
+  margin-top: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.flexWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.textWrapper {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.colorWhite {
+  color: #ffffff;
+  margin: 5px 0 0;
+}
+
+.colorGreen {
+  color: #00ba1a;
+  margin: 5px 0 0;
+}
+
+.sizeVariant {
+  font-size: small;
+}
