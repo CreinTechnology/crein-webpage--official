@@ -49,7 +49,9 @@ export const PageOffer = (props) => {
           <div
             className={classes.textWrapper}
           >
-            <h2>
+            <h2
+              className={classes.descriptionHeader}
+            >
               Produkty tworzone na urządzenia mobilne i desktopowe.
             </h2>
 
@@ -154,18 +156,22 @@ export const PageOffer = (props) => {
           Ci w określeniu budżetu projektu.
         </p>
 
-        <Button
-          className={classes.button}
-          colorVariant={'neon'}
-          sizeVariant={'l'}
-          label={'STRONA WWW'}
-        />
+        <Container
+          className={classes.buttonWrapper}
+        >
+          <Button
+            className={classes.button}
+            colorVariant={'neon'}
+            sizeVariant={'l'}
+            label={'STRONA WWW'}
+          />
 
-        <Button
-          className={classes.button}
-          sizeVariant={'l'}
-          label={'APLIKACJA'}
-        />
+          <Button
+            className={classes.button}
+            sizeVariant={'l'}
+            label={'APLIKACJA'}
+          />
+        </Container>
       </Container>
     </section>
   )

@@ -86,9 +86,16 @@ export const PageContact = (props) => {
           className={classes.formWrapper}
         >
           <ContactForm
-            containerClass={classes.textContainer}
-            textFieldClass={classes.textInput}
-            contentClass={classes.messageContent}
+            className={classes.contactFormWrapper}
+            formContainer={classes.formContainer}
+            textField={classes.textField}
+            messageContent={classes.messageContent}
+            agreeContainer={classes.agreeContainer}
+            checkboxContainer={classes.checkboxContainer}
+            checkboxField={classes.checkboxField}
+            labelContainer={classes.labelContainer}
+            labelField={classes.labelField}
+            buttonClass={classes.buttonClass}
           />
         </Container>
 

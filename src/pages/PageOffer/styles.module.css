@@ -1,13 +1,14 @@
 .offer {
   max-width: 1200px;
   margin: 0 auto;
-  margin-top: 100px;
+  margin-top: 50px;
   padding-left: 30px;
   padding-right: 30px;
   padding-bottom: 30px;
 }
 
 .contentWrapper {
+  margin-top: 50px;
   padding-left: 15px;
   padding-right: 15px;
 }
@@ -18,7 +19,11 @@
 }
 
 .wrapper {
-  margin-top: 50px;
+  margin-top: 75px;
+}
+
+.descriptionHeader {
+  margin-top: 0;
 }
 
 .imageWrapper {
@@ -27,15 +32,24 @@
   align-items: center;
 }
 
-.image{
+.image {
   width: 150px;
   height: 150px;
 }
 
-.description{
+.description {
   line-height: 26px;
 }
 
-.button{
+.buttonWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 0 25px;
+}
+
+.button {
   margin-bottom: 40px;
+  margin-top: 20px;
 }
