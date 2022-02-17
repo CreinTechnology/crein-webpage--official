@@ -4,8 +4,8 @@ import Header from './components//Header'
 import MainSection from './components//MainSection'
 import Footer from './components//Footer'
 import Navbar from './components//Navbar'
-import FullPageLayout from './components/FullPageLayout'
-import MobileMenu from './components/MobileMenu'
+// import FullPageLayout from './components/FullPageLayout'
+// import MobileMenu from './components/MobileMenu'
 
 import PageHome from './pages/PageHome'
 import PageAbout from './pages/PageAbout'
@@ -15,6 +15,8 @@ import PageContact from './pages/PageContact'
 import classes from './styles.module.css'
 
 export const App = () => {
+  // const [isMenuOpen, setIsMenuOpen] = React.useState()
+
   return (
     <div
       className={classes.app}
@@ -22,7 +24,9 @@ export const App = () => {
       <Header
         className={classes.header}
       >
-        <Navbar />
+        <Navbar
+          onClick={() => console.log('You clicked navbar button!')}
+        />
       </Header>
 
       <MainSection
@@ -41,7 +45,7 @@ export const App = () => {
 
       </Footer>
 
-      <FullPageLayout
+      {/* <FullPageLayout
         className={'fullPageLayout'}
       >
         <MobileMenu
@@ -50,7 +54,7 @@ export const App = () => {
           menuList={'menuList'}
           listItemClass={'listItemClass'}
         />
-      </FullPageLayout>
+      </FullPageLayout> */}
     </div>
   )
 }

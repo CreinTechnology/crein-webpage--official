@@ -10,7 +10,7 @@ import classes from './styles.module.css'
 export const Navbar = (props) => {
   const {
     className,
-    children,
+    onClick,
     ...otherProps
   } = props
 
@@ -34,7 +34,8 @@ export const Navbar = (props) => {
           className={classes.menuIconWrapper}
         >
           <MenuBarsIcon
-            className={classes.menuIcon}
+            className={classes.menuButton}
+            onClick={onClick}
           />
         </Container>
 
@@ -45,7 +46,7 @@ export const Navbar = (props) => {
 
 Navbar.propTypes = {
   className: PropTypes.string,
-  children: PropTypes.node
+  onClick: PropTypes.func
 }
 
 export default Navbar
