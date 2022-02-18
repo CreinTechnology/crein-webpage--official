@@ -9,6 +9,7 @@ export const MenuList = (props) => {
   const {
     className,
     listItemClass,
+    onCloseMenuClick,
     ...otherProps
   } = props
 
@@ -20,26 +21,31 @@ export const MenuList = (props) => {
       <ListItem
         className={listItemClass}
         text={'Strona główna'}
+        onCloseMenuClick={onCloseMenuClick}
       />
 
       <ListItem
         className={listItemClass}
         text={'O mnie'}
+        onCloseMenuClick={onCloseMenuClick}
       />
 
       <ListItem
         className={listItemClass}
         text={'Oferta'}
+        onCloseMenuClick={onCloseMenuClick}
       />
 
       <ListItem
         className={listItemClass}
         text={'Wycena'}
+        onCloseMenuClick={onCloseMenuClick}
       />
 
       <ListItem
         className={listItemClass}
         text={'Kontakt'}
+        onCloseMenuClick={onCloseMenuClick}
       />
 
     </ul>
@@ -48,7 +54,8 @@ export const MenuList = (props) => {
 
 MenuList.propTypes = {
   className: PropTypes.string,
-  listItemClass: PropTypes.string
+  listItemClass: PropTypes.string,
+  onCloseMenuClick: PropTypes.func
 }
 
 export default MenuList

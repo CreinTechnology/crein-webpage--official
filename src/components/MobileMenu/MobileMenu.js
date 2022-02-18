@@ -50,6 +50,7 @@ export const MobileMenu = (props) => {
         <MenuList
           className={classMenuItem}
           listItemClass={classListItem}
+          onCloseMenuClick={onCloseMenuClick}
         />
       </Container>
     </div>
