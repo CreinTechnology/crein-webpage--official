@@ -4,6 +4,7 @@ import PropTypes from 'prop-types'
 import Container from '../Container'
 import CloseMenuIcon from '../CloseMenuIcon'
 import MenuList from '../MenuList'
+import Button from '../Button'
 
 import MenuCreinLogoSvg from '../../logo/MenuCreinLogoSvg'
 
@@ -16,6 +17,7 @@ export const MobileMenu = (props) => {
     menuContainer,
     menuList,
     listItemClass,
+    onCloseMenuClick,
     ...otherProps
   } = props
 
@@ -34,9 +36,12 @@ export const MobileMenu = (props) => {
           < MenuCreinLogoSvg/>
         </Container>
 
-        <Container>
+        <Button
+          className={classes.closeMenuButton}
+          onClick={onCloseMenuClick}
+        >
           <CloseMenuIcon />
-        </Container>
+        </Button>
       </Container>
 
       <Container
@@ -56,7 +61,8 @@ MobileMenu.propTypes = {
   headerClass: PropTypes.string,
   menuContainer: PropTypes.string,
   menuList: PropTypes.string,
-  listItemClass: PropTypes.string
+  listItemClass: PropTypes.string,
+  onCloseMenuClick: PropTypes.func.isRequired
 }
 
 export default MobileMenu

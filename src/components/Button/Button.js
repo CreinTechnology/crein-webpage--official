@@ -6,6 +6,7 @@ import classes from './styles.module.css'
 export const Button = (props) => {
   const {
     className,
+    children,
     label,
     sizeVariant,
     colorVariant,
@@ -21,6 +22,7 @@ export const Button = (props) => {
       {...otherProps}
     >
       {label}
+      {children}
     </button>
   )
 }
@@ -29,6 +31,7 @@ Button.propTypes = {
   className: PropTypes.string,
   colorVariant: PropTypes.string,
   label: PropTypes.string,
+  children: PropTypes.node,
   sizeVariant: PropTypes.oneOf(['xs', 's', 'l', 'xl'])
 }
 
