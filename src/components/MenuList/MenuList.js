@@ -9,7 +9,8 @@ export const MenuList = (props) => {
   const {
     className,
     listItemClass,
-    onCloseMenuClick,
+    isMenuOpen,
+    smoothScrollToElement,
     ...otherProps
   } = props
 
@@ -21,31 +22,31 @@ export const MenuList = (props) => {
       <ListItem
         className={listItemClass}
         text={'Strona główna'}
-        onCloseMenuClick={onCloseMenuClick}
+        onClick={(e) => smoothScrollToElement('home')}
       />
 
       <ListItem
         className={listItemClass}
         text={'O mnie'}
-        onCloseMenuClick={onCloseMenuClick}
+        onClick={(e) => smoothScrollToElement('about')}
       />
 
       <ListItem
         className={listItemClass}
         text={'Oferta'}
-        onCloseMenuClick={onCloseMenuClick}
+        onClick={(e) => smoothScrollToElement('offer')}
       />
 
       <ListItem
         className={listItemClass}
         text={'Wycena'}
-        onCloseMenuClick={onCloseMenuClick}
+        onClick={(e) => smoothScrollToElement('estimate')}
       />
 
       <ListItem
         className={listItemClass}
         text={'Kontakt'}
-        onCloseMenuClick={onCloseMenuClick}
+        onClick={(e) => smoothScrollToElement('contact')}
       />
 
     </ul>
@@ -55,7 +56,8 @@ export const MenuList = (props) => {
 MenuList.propTypes = {
   className: PropTypes.string,
   listItemClass: PropTypes.string,
-  onCloseMenuClick: PropTypes.func
+  isMenuOpen: PropTypes.bool,
+  smoothScrollToElement: PropTypes.func
 }
 
 export default MenuList

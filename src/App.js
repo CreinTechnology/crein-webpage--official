@@ -16,10 +16,30 @@ import classes from './styles.module.css'
 
 export const App = () => {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false)
+  const [windowScrollPos, setWindowScrollY] = React.useState(window.scrollY)
 
   const toggleMenuVisibility = (e) => {
     setIsMenuOpen(!isMenuOpen)
   }
+
+  const smoothScrollToElement = (element) => {
+    setIsMenuOpen(!isMenuOpen)
+    const elementToScroll = document.querySelector(`#${element}`)
+    elementToScroll.scrollIntoView()
+  }
+
+  React.useEffect(() => {
+    window.addEventListener('scroll', () => {
+      const currentScrollPos = window.scrollY
+      setWindowScrollY(window.scrollY)
+
+      const headerElement = document.querySelector('#navbar')
+
+      currentScrollPos > windowScrollPos ?
+        headerElement.style.transform = 'translateY(-100%)' :
+        headerElement.style.transform = 'translateY(0)'
+    })
+  }, [windowScrollPos])
 
   return (
     <div
@@ -27,6 +47,7 @@ export const App = () => {
     >
       <Header
         className={classes.header}
+        id={'navbar'}
       >
         <Navbar
           onClick={(e) => toggleMenuVisibility(e)}
@@ -37,13 +58,15 @@ export const App = () => {
         isMenuOpen ?
           <FullPageLayout
             className={'fullPageLayout'}
+            onClick={(e) => toggleMenuVisibility(e)}
           >
             <MobileMenu
               headerClass={'header'}
               menuContainer={'menuContainer'}
               menuList={'menuList'}
               listItemClass={'listItemClass'}
-              onCloseMenuClick={(e) => toggleMenuVisibility(e)}
+              isMenuOpen={isMenuOpen}
+              smoothScrollToElement={smoothScrollToElement}
             />
           </FullPageLayout> :
           null
@@ -52,10 +75,18 @@ export const App = () => {
       <MainSection
         className={classes.main}
       >
-        <PageHome />
-        <PageAbout />
-        <PageOffer />
-        <PageContact />
+        <PageHome
+          id={'home'}
+        />
+        <PageAbout
+          id={'about'}
+        />
+        <PageOffer
+          id={'offer'}
+        />
+        <PageContact
+          id={'contact'}
+        />
 
       </MainSection>
 

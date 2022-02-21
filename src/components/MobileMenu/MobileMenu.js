@@ -18,6 +18,8 @@ export const MobileMenu = (props) => {
     menuList,
     listItemClass,
     onCloseMenuClick,
+    isMenuOpen,
+    smoothScrollToElement,
     ...otherProps
   } = props
 
@@ -50,7 +52,8 @@ export const MobileMenu = (props) => {
         <MenuList
           className={classMenuItem}
           listItemClass={classListItem}
-          onCloseMenuClick={onCloseMenuClick}
+          isMenuOpen={isMenuOpen}
+          smoothScrollToElement={smoothScrollToElement}
         />
       </Container>
     </div>
@@ -63,7 +66,9 @@ MobileMenu.propTypes = {
   menuContainer: PropTypes.string,
   menuList: PropTypes.string,
   listItemClass: PropTypes.string,
-  onCloseMenuClick: PropTypes.func.isRequired
+  isMenuOpen: PropTypes.bool,
+  onCloseMenuClick: PropTypes.func,
+  smoothScrollToElement: PropTypes.func
 }
 
 export default MobileMenu

@@ -7,14 +7,12 @@ export const ListItem = (props) => {
   const {
     className,
     text,
-    onCloseMenuClick,
     ...otherProps
   } = props
 
   return (
     <li
       className={`${classes.root}${className ? ` ${className}` : ''}`}
-      onClick={onCloseMenuClick}
       {...otherProps}
     >
       {text}
@@ -24,8 +22,7 @@ export const ListItem = (props) => {
 
 ListItem.propTypes = {
   className: PropTypes.string,
-  text: PropTypes.string,
-  onCloseMenuClick: PropTypes.func
+  text: PropTypes.string
 }
 
 export default ListItem

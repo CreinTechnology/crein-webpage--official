@@ -7,12 +7,14 @@ export const FullPageLayout = (props) => {
   const {
     className,
     children,
+    onClick,
     ...otherProps
   } = props
 
   return (
     <div
       className={`${classes.root}${className ? ` ${className}` : ''}`}
+      onClick={onClick}
       {...otherProps}
     >
       {children}
@@ -22,7 +24,8 @@ export const FullPageLayout = (props) => {
 
 FullPageLayout.propTypes = {
   className: PropTypes.string,
-  children: PropTypes.node
+  children: PropTypes.node,
+  onClick: PropTypes.func
 }
 
 export default FullPageLayout

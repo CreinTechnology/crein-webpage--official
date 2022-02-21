@@ -143,6 +143,7 @@ export const PageOffer = (props) => {
 
       <Container
         className={classes.contentWrapper}
+        id={'estimate'}
       >
         <h2>
           Policz, ile może kosztować Twój projekt.

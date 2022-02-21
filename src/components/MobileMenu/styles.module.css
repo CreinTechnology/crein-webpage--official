@@ -4,8 +4,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 70px;
-  padding: 22px 0;
+  height: 40px;
+  padding: 10px 0;
 }
 
 .menuContainer {
@@ -15,6 +15,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 50px;
 }
 
 .menuList {
