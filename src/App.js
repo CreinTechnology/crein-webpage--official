@@ -36,7 +36,7 @@ export const App = () => {
         id={'navbar'}
       >
         <Navbar
-          onClick={(e) => toggleMenuVisibility(e)}
+          toggleMenuVisibility={(e) => toggleMenuVisibility(e)}
         />
       </Header>
 

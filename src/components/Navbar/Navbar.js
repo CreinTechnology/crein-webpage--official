@@ -10,7 +10,7 @@ import classes from './styles.module.css'
 export const Navbar = (props) => {
   const {
     className,
-    onClick,
+    toggleMenuVisibility,
     ...otherProps
   } = props
 
@@ -35,7 +35,7 @@ export const Navbar = (props) => {
         >
           <MenuOpenButton
             className={classes.menuButton}
-            onClick={onClick}
+            onClick={toggleMenuVisibility}
           />
         </Container>
 
@@ -46,7 +46,7 @@ export const Navbar = (props) => {
 
 Navbar.propTypes = {
   className: PropTypes.string,
-  onClick: PropTypes.func
+  toggleMenuVisibility: PropTypes.func
 }
 
 export default Navbar
