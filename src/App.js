@@ -16,7 +16,6 @@ import classes from './styles.module.css'
 
 export const App = () => {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false)
-  const [windowScrollPos, setWindowScrollY] = React.useState(window.scrollY)
 
   const toggleMenuVisibility = (e) => {
     setIsMenuOpen(!isMenuOpen)
@@ -27,19 +26,6 @@ export const App = () => {
     const elementToScroll = document.querySelector(`#${element}`)
     elementToScroll.scrollIntoView()
   }
-
-  React.useEffect(() => {
-    window.addEventListener('scroll', () => {
-      const currentScrollPos = window.scrollY
-      setWindowScrollY(window.scrollY)
-
-      const headerElement = document.querySelector('#navbar')
-
-      currentScrollPos > windowScrollPos ?
-        headerElement.style.transform = 'translateY(-100%)' :
-        headerElement.style.transform = 'translateY(0)'
-    })
-  }, [windowScrollPos])
 
   return (
     <div

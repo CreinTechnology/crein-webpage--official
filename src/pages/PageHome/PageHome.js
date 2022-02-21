@@ -12,6 +12,11 @@ export const PageHome = (props) => {
     ...otherProps
   } = props
 
+  const scrollToElement = () => {
+    const elementScrollTo = document.querySelector('#estimate')
+    elementScrollTo.scrollIntoView()
+  }
+
   return (
     <section
       className={`${classes.home}${className ? ` ${className}` : ''}`}
@@ -296,6 +301,7 @@ export const PageHome = (props) => {
         <Button
           label={'ILE TO KOSZTUJE?'}
           colorVariant={'neon'}
+          onClick={scrollToElement}
         />
       </Container>
 
