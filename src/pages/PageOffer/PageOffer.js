@@ -188,11 +188,7 @@ export const PageOffer = (props) => {
       {
         isEstimateViewed ?
           <FullPageLayout
-            className={'fullPageLayout'}
-            onClick={() => {
-              toggleEstimateView()
-              console.log(`${isEstimateViewed}`)
-            }}
+            className={classes.fullPageLayout__black}
           >
             <Estimate
               headerClass={classes.headerClass}
