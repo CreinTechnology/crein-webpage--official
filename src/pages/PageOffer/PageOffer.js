@@ -166,6 +166,10 @@ export const PageOffer = (props) => {
           Ci w określeniu budżetu projektu.
         </p>
 
+        <h3>
+          Wskaż, czego potrzebujesz:
+        </h3>
+
         <Container
           className={classes.buttonWrapper}
         >
@@ -194,6 +198,7 @@ export const PageOffer = (props) => {
               headerClass={classes.headerClass}
               buttonClassName={classes.closeMenuButton}
               onCloseMenuClick={toggleEstimateView}
+              onBackToMainPageButtonClick={toggleEstimateView}
             />
           </FullPageLayout> :
           null
