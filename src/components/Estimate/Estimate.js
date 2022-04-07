@@ -4,6 +4,7 @@ import PropTypes from 'prop-types'
 import MobileHeader from '../MobileHeader'
 
 import classes from './styles.module.css'
+import Button from '../Button'
 
 export const Estimate = (props) => {
   const {
@@ -23,6 +24,12 @@ export const Estimate = (props) => {
         className={headerClass}
         buttonClassName={buttonClassName}
         onCloseMenuClick={onCloseMenuClick}
+      />
+
+      <Button
+        label={'Back to main page'}
+        sizeVariant
+        colorVariant
       />
     </div>
   )
