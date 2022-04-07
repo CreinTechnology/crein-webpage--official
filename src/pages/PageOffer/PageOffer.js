@@ -4,6 +4,8 @@ import PropTypes from 'prop-types'
 import Row from '../../components/Row'
 import Container from '../../components/Container'
 import Button from '../../components/Button'
+import Estimate from '../../components/Estimate/'
+import FullPageLayout from '../../components/FullPageLayout'
 
 import laptopUser from '../../images/laptopUser.png'
 import chilloutIcon from '../../images/chilloutIcon.png'
@@ -16,8 +18,15 @@ import classes from './styles.module.css'
 export const PageOffer = (props) => {
   const {
     className,
+    onCloseMenuClick,
     ...otherProps
   } = props
+
+  const [isEstimateViewed, setIsEstimateViewed] = React.useState(false)
+
+  const toggleEstimateView = () => {
+    setIsEstimateViewed(!isEstimateViewed)
+  }
 
   return (
     <section
@@ -165,6 +174,7 @@ export const PageOffer = (props) => {
             colorVariant={'neon'}
             sizeVariant={'l'}
             label={'STRONA WWW'}
+            onClick={toggleEstimateView}
           />
 
           <Button
@@ -174,12 +184,33 @@ export const PageOffer = (props) => {
           />
         </Container>
       </Container>
+
+      {
+        isEstimateViewed ?
+          <FullPageLayout
+            className={'fullPageLayout'}
+            onClick={() => {
+              toggleEstimateView()
+              console.log(`${isEstimateViewed}`)
+            }}
+          >
+            <Estimate
+              headerClass={classes.headerClass}
+              buttonClassName={classes.closeMenuButton}
+              onCloseMenuClick={toggleEstimateView}
+            />
+          </FullPageLayout> :
+          null
+      }
+
     </section>
   )
 }
 
 PageOffer.propTypes = {
-  className: PropTypes.string
+  className: PropTypes.string,
+  toggleMenuVisibility: PropTypes.func,
+  onCloseMenuClick: PropTypes.func
 }
 
 export default PageOffer

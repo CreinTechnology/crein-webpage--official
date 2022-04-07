@@ -2,11 +2,12 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 import Container from '../Container'
-import CloseMenuIcon from '../CloseMenuIcon'
 import MenuList from '../MenuList'
-import Button from '../Button'
+import MobileHeader from '../MobileHeader'
 
-import MenuCreinLogoSvg from '../../logo/MenuCreinLogoSvg'
+// import CloseMenuIcon from '../CloseMenuIcon'
+// import Button from '../Button'
+// import MenuCreinLogoSvg from '../../logo/MenuCreinLogoSvg'
 
 import classes from './styles.module.css'
 
@@ -31,19 +32,13 @@ export const MobileMenu = (props) => {
       className={`${classes.root}${className ? ` ${className}` : ''}`}
       {...otherProps}
     >
-      <Container
-        className={classes.headerClass}
-      >
-        <Container>
-          < MenuCreinLogoSvg/>
-        </Container>
+      <Container >
+        <MobileHeader
+          className={classes.headerClass}
+          buttonClassName={classes.closeMenuButton}
+          onCloseMenuClick={onCloseMenuClick}
+        />
 
-        <Button
-          className={classes.closeMenuButton}
-          onClick={onCloseMenuClick}
-        >
-          <CloseMenuIcon />
-        </Button>
       </Container>
 
       <Container

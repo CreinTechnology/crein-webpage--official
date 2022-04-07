@@ -47,10 +47,9 @@ export const App = () => {
             onClick={(e) => toggleMenuVisibility(e)}
           >
             <MobileMenu
-              headerClass={'header'}
-              menuContainer={'menuContainer'}
               menuList={'menuList'}
               listItemClass={'listItemClass'}
+              onCloseMenuClick={toggleMenuVisibility}
               isMenuOpen={isMenuOpen}
               smoothScrollToElement={smoothScrollToElement}
             />
@@ -69,6 +68,7 @@ export const App = () => {
         />
         <PageOffer
           id={'offer'}
+          onCloseMenuClick={toggleMenuVisibility}
         />
         <PageContact
           id={'contact'}
